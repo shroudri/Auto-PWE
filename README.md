@@ -72,4 +72,4 @@ cd Auto-PWE
     - Cambiada la fuente principal de la Polybar a Roboto Slab Bold
 - Sxhkdrc
     - Cambiados algunos atajos
-    - Añadida la opción de tomar capturas de pantalla con xfce4-screenshooter (super + shift + h)
+    - Añadida la opción de tomar capturas de pantalla con xfce4-screenshooter (<kbd>super</kbd> + <kbd>shift</kbd> + <kbd>h</kbd>)
