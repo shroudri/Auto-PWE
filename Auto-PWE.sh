@@ -160,6 +160,7 @@ function scripts(){
 	echo -e "${yellow}\n$(cat $info_path/$info_lang | awk 'NR==48')\n${end}"
 	#cd ~/.config/bin
 	cp $current_path/hackthebox.sh ~/.config/bin/ && chmod +x ~/.config/bin/hackthebox.sh
+	cp $current_path/setTarget.sh ~/.config/bin/ && chmod +x ~/.config/bin/setTarget.sh
 	cp $current_path/ethernet_status.sh ~/.config/bin/ && chmod +x ~/.config/bin/ethernet_status.sh
 	echo -e '#!/bin/bash\n\necho -e "%{F#FF0000} %{F#e2ee6a}$(whoami)%{u-}"' > ~/.config/bin/$(whoami).sh && chmod +x ~/.config/bin/$(whoami).sh
 	#while true; do

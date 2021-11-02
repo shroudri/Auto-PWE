@@ -63,3 +63,13 @@ cd Auto-PWE
 - Autor: leviswings
 - Inspirado en s4vitar
 - Especial gracias a Marcelo Vazquez (alias s4vitar), Antonio Sarosi y Heath Adams (alias TheCyberMentor)
+## Personalización de therodri2
+- Modificación del comptom.conf para que funcione correctamente en kali 2020.3
+- Modificación del zshrc -> este trae algún alias nuevo (display -> feh) y alguna función como setTarget
+- Polybar:
+> Adición de target.sh en el script para que se coloque en ~/.config/bin/target.sh
+> Añadido el módulo "target" al config.ini del tema 11 para que salga en la parte derecha de la Polybar y apunte a /.config/bin/target.sh
+> Cambiada la fuente principal de la Polybar a Roboto Slab Bold
+- Sxhkdrc
+> Cambiados algunos atajos
+> Añadida la opción de tomar capturas de pantalla con xfce4-screenshooter (super + shift + h)

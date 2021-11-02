@@ -7,7 +7,7 @@ super + Return
 	gnome-terminal
 
 # program launcher
-super + d
+super + space
 	rofi -show run
 
 # make sxhkd reload its configuration files:
@@ -130,7 +130,7 @@ super + ctrl + {Left,Down,Up,Right}
 
 # Custom move/resize
 alt + super + {Left,Down,Up,Right}
-	/home/username/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
+	/home/shroudri/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
 
 
 # ---------------------------------------------
@@ -141,3 +141,9 @@ alt + super + {Left,Down,Up,Right}
 
 super + shift + g
 	google-chrome
+
+super + shift + b
+	burpsuite
+
+super + shift + h
+	xfce4-screenshooter
