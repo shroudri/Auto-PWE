@@ -7,6 +7,7 @@ feh --bg-fill /home/username/Wallpapers/FondoDePantalla.jpg &
 ~/.config/polybar/launch.sh &
 killall mate-notification-daemon; dunst &
 
+
 bspc config pointer_modifier mod1
 
 bspc monitor -d I II III IV V VI VII VIII IX X

@@ -69,7 +69,7 @@ Repository
 [?] Are you satisfied with the polybar style?
 [+] Theme installed successfully
 Insert a number from 1 to 13!
-[?] Do you want to install the s4vitar configuration?
+[?] Do you want to install the s4vitar configuration? Say NO to use shroudri's :P
 [+] Installing the s4vitar configuration
 
 # Functions powerlevel10k_zsh_username() and powerlevel10k_zsh_root()

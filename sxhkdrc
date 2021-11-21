@@ -139,11 +139,14 @@ alt + super + {Left,Down,Up,Right}
 
 # Google-Chrome
 
-super + shift + g
-	google-chrome
 
+# First fixes the java problem with bspwm, then opens burpsuite
 super + shift + b
-	burpsuite
+	export _JAVA_AWT_WM_NONREPARENTING=1; burpsuite
 
 super + shift + h
 	xfce4-screenshooter
+
+# First fixes the java problem with bspwm, then opens owasp-zap
+super + shift + o
+	export _JAVA_AWT_WM_NONREPARENTING=1; owasp-zap
