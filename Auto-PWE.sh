@@ -318,6 +318,15 @@ function powerlevel10k_zsh_username(){
 	press_key
 	zsh
 }
+
+function tmux_setup(){
+	cd
+	git clone https://github.com/gpakosz/.tmux.git
+	ln -s -f .tmux/.tmux.conf
+	cp .tmux/.tmux.conf.local .
+}
+
+
 function powerlevel10k_zsh_root(){
 	# Eliminar existencias
 	sudo rm -f -r /root/powerlevel10k 2>/dev/null
@@ -350,7 +359,7 @@ function powerlevel10k_zsh_username_config(){
 	sed -i "s/rvm                     # ruby/#rvm                     # ruby/" ~/.p10k.zsh
 	sed -i "s/fvm                     # flutter/#fvm                     # flutter/" ~/.p10k.zsh
 	sed -i "s/luaenv                  # lua/#luaenv                  # lua/" ~/.p10k.zsh
-	sed -i "s/jenv                    # java/#jenv                    # java/" ~/.p10k.zsh
+sed -i "s/jenv                    # java/#jenv                    # java/" ~/.p10k.zsh
 	sed -i "s/plenv                   # perl/#plenv                   # perl/" ~/.p10k.zsh
 	sed -i "s/phpenv                  # php/#phpenv                  # php/" ~/.p10k.zsh
 	sed -i "s/scalaenv                # scala/#scalaenv                # scala/" ~/.p10k.zsh
@@ -541,6 +550,7 @@ if [[ $# -eq 1 ]]; then
 			fi
 			clear; banner; echo
 			fzf_username
+			tmux_setup
 		else
 			clear; banner; echo
 			echo -e "${red}\n$(cat $info_path/$info_lang | awk 'NR==97')\n${end}"
